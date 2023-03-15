@@ -2,7 +2,7 @@ import working from "../assets/illustration-working.svg";
 
 export default function () {
   return (
-    <div className="flex flex-col items-center justify-center pt-10">
+    <div className="flex flex-col items-center justify-center pt-10 px-6 md:px-36">
       <div className="flex flex-row justify-start items-center">
         <div className="flex flex-col">
           <h1 className="text-5xl font-extrabold">

@@ -3,7 +3,7 @@ import pattern from "../assets/bg-shorten-desktop.svg";
 export default function Link() {
   return (
     <>
-      <div className="bg-primary-dark-violet py-8 px-10 rounded-md relative overflow-hidden">
+      <div className="bg-primary-dark-violet py-8 px-10  rounded-md relative overflow-hidden mx-6 md:mx-36 translate-y-[50%]">
         <img
           src={pattern}
           alt=""
