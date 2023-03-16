@@ -3,13 +3,8 @@ import pattern from "../assets/bg-shorten-desktop.svg";
 export default function Link() {
   return (
     <>
-      <div className="bg-primary-dark-violet py-8 px-10  rounded-md relative overflow-hidden mx-6 md:mx-36 translate-y-[50%]">
-        <img
-          src={pattern}
-          alt=""
-          className="absolute top-0 right-0 overflow-hidden z-10"
-        />
-        <form className="flex gap-3">
+      <div className="bg-primary-dark-violet bg-[url('./assets/bg-shorten-desktop.svg')] bg-cover py-8 px-10 rounded-md relative overflow-hidden mx-6 md:mx-36 translate-y-[50%]">
+        <form className="flex flex-col lg-flex-row gap-3">
           <input
             type="text"
             placeholder="Shorten a link here..."

@@ -28,7 +28,7 @@ export default function Navbar() {
           Sign Up
         </a>
       </div>
-      <div className="">
+      <div className="lg:hidden">
         <Menu>
           <Menu.Button>
             <RxHamburgerMenu />

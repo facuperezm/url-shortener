@@ -12,9 +12,9 @@ export default function Stats() {
           statistics dashboard.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-6 px-6 md:px-36 pb-40">
+      <div className="grid grid-flow-row lg:grid-cols-3 gap-6 px-6 md:px-36 pb-40">
         <div className="bg-white rounded-md p-6">
-          <div className="bg-primary-dark-violet rounded-full absolute p-4 -translate-y-16">
+          <div className="bg-primary-dark-violet rounded-full absolute p-4 -translate-y-16 right-[50%] translate-x-[50%] md:right-auto md:-translate-x-0 ">
             <img src={firstcomp} alt="" />
           </div>
           <h2 className="text-neutral-very-dark-violet font-bold text-lg pt-8 pb-4">
@@ -26,7 +26,7 @@ export default function Stats() {
           </p>
         </div>
         <div className="bg-white rounded-md p-6 translate-y-8">
-          <div className="flex bg-primary-dark-violet rounded-full absolute p-4 -translate-y-16 items-center align-center">
+          <div className="bg-primary-dark-violet rounded-full absolute p-4 -translate-y-16 right-[50%] translate-x-[50%] md:right-auto md:-translate-x-0 ">
             <img src={firstcomp} alt="" />
           </div>
           <h2 className="text-neutral-very-dark-violet font-bold text-lg pt-8 pb-4">
@@ -38,7 +38,7 @@ export default function Stats() {
           </p>
         </div>
         <div className="bg-white rounded-md p-6 translate-y-16">
-          <div className="bg-primary-dark-violet rounded-full absolute p-4 -translate-y-16">
+          <div className="bg-primary-dark-violet rounded-full absolute p-4 -translate-y-16 right-[50%] translate-x-[50%] md:right-auto md:-translate-x-0 ">
             <img src={firstcomp} alt="" />
           </div>
           <h2 className="text-neutral-very-dark-violet font-bold text-lg pt-8 pb-4">

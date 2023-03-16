@@ -7,8 +7,7 @@ module.exports = {
         sans: ["Poppins", "sans-serif"],
       },
       screens: {
-        sm: "375px",
-        md: "1440px",
+        lg: "1480px",
       },
       colors: {
         "primary-cyan": "hsl(180, 66%, 49%)",
