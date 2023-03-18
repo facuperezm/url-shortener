@@ -5,8 +5,7 @@ import Hero from "./components/Hero";
 import Link from "./components/Link";
 import Navbar from "./components/Navbar";
 import Stats from "./components/Stats";
-
-interface Response {
+interface ShortenResponse {
   ok: boolean;
   result: {
     code: string;
@@ -21,43 +20,35 @@ interface Response {
   };
 }
 
+type Links = ShortenResponse["result"][];
+
 export default function App() {
+  const [links, setLinks] = React.useState<Links>([]);
   const [link, setLink] = React.useState("");
-  const [response, setResponse] = React.useState<Response>({
-    ok: false,
-    result: {
-      code: "",
-      full_short_link: "",
-      full_short_link2: "",
-      original_link: "",
-      short_link: "",
-      short_link2: "",
-      share_link: "",
-      share_link2: "",
-      warning: "",
-    },
-  });
 
-  const fetchUrl = async () => {
-    const url = "https://api.shrtco.de/v2/shorten?url=" + link;
-    const response = await fetch(url);
-    const data = await response.json();
-    setResponse(data);
-    console.log(data);
-  };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setLink("");
-    fetchUrl();
-  };
+    try {
+      // Send API request to shorten the link
+      const url = "https://api.shrtco.de/v2/shorten?url=" + link;
+      const response = await fetch(url);
+      const data = await response.json();
 
+      // Update the links array with the new shortened link
+      setLinks((links) => [...links, data.result]);
+
+      // Update the response object with the new API response
+      setLink("");
+    } catch (error) {
+      console.error(error);
+    }
+  };
   return (
     <>
       <Navbar />
       <Hero />
       <Link handleSubmit={handleSubmit} link={link} setLink={setLink} />
-      <Stats response={response} />
+      <Stats links={links} />
       <Boost />
       <Footer />
     </>

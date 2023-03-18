@@ -1,25 +1,27 @@
 import firstcomp from "../assets/icon-brand-recognition.svg";
 import LinkUrl from "./LinkUrl";
-interface Response {
-  ok: boolean;
-  result: {
-    code: string;
-    full_short_link: string;
-    full_short_link2: string;
-    original_link: string;
-    short_link: string;
-    short_link2: string;
-    share_link: string;
-    share_link2: string;
-    warning: string;
-  };
+
+interface Link {
+  code: string;
+  full_short_link: string;
+  full_short_link2: string;
+  original_link: string;
+  short_link: string;
+  short_link2: string;
+  share_link: string;
+  share_link2: string;
+  warning: string;
 }
 
-export default function Stats({ response }: { response: Response }) {
+interface StatsProps {
+  links: Link[];
+}
+
+export default function Stats({ links }: StatsProps) {
   return (
     <>
       <div className="flex flex-col justify-center pt-24 bg-primary-cyan bg-opacity-10 w-full">
-        {response.ok && <LinkUrl response={response} />}
+        {links.length > 0 && <LinkUrl links={links} />}
         <div className="flex flex-col justify-start pt-8">
           <h1 className="text-3xl font-extrabold text-neutral-very-dark-blue text-center ">
             Advanced Statistics

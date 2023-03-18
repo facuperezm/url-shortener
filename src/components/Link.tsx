@@ -1,6 +1,4 @@
 import React from "react";
-import Url from "./LinkUrl";
-import LinkUrl from "./LinkUrl";
 
 interface Props {
   handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
