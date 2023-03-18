@@ -4,22 +4,22 @@ import { Menu } from "@headlessui/react";
 
 export default function Navbar() {
   return (
-    <header className="flex flex-row w-full px-6 md:px-36 xl:px-20 items-center justify-between text-neutral-grayish-violet text-sm font-bold">
+    <header className="flex flex-row w-full px-6 md:px-48 items-center justify-between text-neutral-grayish-violet text-sm font-bold">
       <nav className="flex flex-row items-center py-10">
         <div>
           <img src={logo} className="w-[110px] h-[30px] cursor-pointer" />
         </div>
-        <a href="#" className="px-2 ml-6 hidden lg:block">
+        <a href="#" className="px-2 ml-6 hidden md:block">
           Features
         </a>
-        <a href="#" className="px-2 hidden lg:block">
+        <a href="#" className="px-2 hidden md:block">
           Pricing
         </a>
-        <a href="#" className="px-2 hidden lg:block">
+        <a href="#" className="px-2 hidden md:block">
           Resources
         </a>
       </nav>
-      <div className="lg:flex flex-row items-center gap-6 hidden">
+      <div className="md:flex flex-row items-center gap-6 hidden">
         <a href="#">Login</a>
         <a
           href="#"
@@ -28,7 +28,7 @@ export default function Navbar() {
           Sign Up
         </a>
       </div>
-      <div className="lg:hidden">
+      <div className="md:hidden">
         <Menu>
           <Menu.Button>
             <RxHamburgerMenu />

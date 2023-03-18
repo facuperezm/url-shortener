@@ -44,13 +44,13 @@ export default function App() {
     }
   };
   return (
-    <>
+    <main className="font-sans">
       <Navbar />
       <Hero />
       <Link handleSubmit={handleSubmit} link={link} setLink={setLink} />
       <Stats links={links} />
       <Boost />
       <Footer />
-    </>
+    </main>
   );
 }

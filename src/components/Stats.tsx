@@ -1,4 +1,6 @@
 import firstcomp from "../assets/icon-brand-recognition.svg";
+import secondcomp from "../assets/icon-detailed-records.svg";
+import thirdcomp from "../assets/icon-fully-customizable.svg";
 import LinkUrl from "./LinkUrl";
 
 interface Link {
@@ -31,12 +33,12 @@ export default function Stats({ links }: StatsProps) {
             statistics dashboard.
           </p>
         </div>
-        <div className="grid grid-flow-row lg:grid-cols-3 gap-6 px-6 md:px-36 pb-40">
+        <div className="grid grid-flow-row md:grid-cols-3 gap-6 px-6 md:px-48 pb-40">
           <div className="bg-white rounded-md p-6">
             <div className="bg-primary-dark-violet rounded-full absolute p-4 -translate-y-16 right-[50%] translate-x-[50%] md:right-auto md:-translate-x-0 ">
               <img src={firstcomp} alt="" />
             </div>
-            <h2 className="text-neutral-very-dark-violet font-bold text-lg pt-8 pb-4">
+            <h2 className="text-neutral-very-dark-violet font-bold text-lg pt-4 pb-2">
               Brand Recognition
             </h2>
             <p className="text-neutral-gray text-sm">
@@ -47,9 +49,9 @@ export default function Stats({ links }: StatsProps) {
           </div>
           <div className="bg-white rounded-md p-6 translate-y-8">
             <div className="bg-primary-dark-violet rounded-full absolute p-4 -translate-y-16 right-[50%] translate-x-[50%] md:right-auto md:-translate-x-0 ">
-              <img src={firstcomp} alt="" />
+              <img src={secondcomp} alt="" />
             </div>
-            <h2 className="text-neutral-very-dark-violet font-bold text-lg pt-8 pb-4">
+            <h2 className="text-neutral-very-dark-violet font-bold text-lg pt-4 pb-2">
               Detailed Records
             </h2>
             <p className="text-neutral-gray text-sm">
@@ -59,9 +61,9 @@ export default function Stats({ links }: StatsProps) {
           </div>
           <div className="bg-white rounded-md p-6 translate-y-16">
             <div className="bg-primary-dark-violet rounded-full absolute p-4 -translate-y-16 right-[50%] translate-x-[50%] md:right-auto md:-translate-x-0 ">
-              <img src={firstcomp} alt="" />
+              <img src={thirdcomp} alt="" />
             </div>
-            <h2 className="text-neutral-very-dark-violet font-bold text-lg pt-8 pb-4">
+            <h2 className="text-neutral-very-dark-violet font-bold text-lg pt-5 pb-2">
               Fully Customizable
             </h2>
             <p className="text-neutral-gray text-sm">
