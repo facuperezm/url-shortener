@@ -8,7 +8,7 @@ const Footer = () => {
     <>
       <footer className="text-center md:text-left md:flex md:flex-row md:justify-around px-12 md:py-10 bg-neutral-very-dark-violet text-white">
         <div>
-          <h3 className="font-bold text-4xl pt-10">Shortly</h3>
+          <h3 className="font-bold text-4xl pt-12">Shortly</h3>
         </div>
         <div className="md:grid md:grid-cols-3 md:gap-40 md:pr-10 pb-12 ">
           {footerLink.map(({ id, title, links }) => (

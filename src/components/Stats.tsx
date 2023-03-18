@@ -28,7 +28,7 @@ export default function Stats({ links }: StatsProps) {
           <h1 className="text-3xl font-extrabold text-neutral-very-dark-blue text-center ">
             Advanced Statistics
           </h1>
-          <p className="text-neutral-grayish-violet pt-2 line-clamp-2 lg:px-40 py-20 text-center">
+          <p className="text-neutral-grayish-violet pt-2 line-clamp-2 md:px-40 px-10 py-20 text-center">
             Track how your links are performing across the web with our advanced
             statistics dashboard.
           </p>

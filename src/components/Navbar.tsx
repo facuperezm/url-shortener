@@ -31,7 +31,7 @@ export default function Navbar() {
       <div className="md:hidden">
         <Menu>
           <Menu.Button>
-            <RxHamburgerMenu />
+            <RxHamburgerMenu className="w-6 h-6" />
           </Menu.Button>
           <Menu.Items className="flex flex-col justify-center items-center border-mx font-bold m-auto absolute z-10 pb-6 left-[50%] transform -translate-x-[50%] top-10 w-[50%] bg-primary-dark-violet space-y-4 rounded-xl px-5">
             <Menu.Item>
