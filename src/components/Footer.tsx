@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
         <div className="md:grid md:grid-cols-3 md:gap-40 md:pr-10 pb-12 ">
           {footerLink.map(({ id, title, links }) => (
-            <ul>
+            <ul key={id}>
               <h4 className="mt-10 mb-5 text-lg font-bold">{title}</h4>
               {links.map((link) => (
                 <li
