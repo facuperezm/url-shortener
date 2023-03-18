@@ -1,7 +1,16 @@
 import React from "react";
 
-export default function LinkItem({ link }) {
-  const [copy, setCopy] = React.useState(false);
+interface Link {
+  original_link: string;
+  full_short_link: string;
+}
+
+interface Props {
+  link: Link;
+}
+
+export default function LinkItem({ link }: Props) {
+  const [copy, setCopy] = React.useState<boolean>(false);
 
   React.useEffect(() => {
     if (copy) {
@@ -11,7 +20,7 @@ export default function LinkItem({ link }) {
     }
   }, [copy]);
 
-  const handleCopy = (link: string) => {
+  const handleCopy = (link: string): void => {
     navigator.clipboard.writeText(link);
     setCopy(true);
   };
