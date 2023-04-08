@@ -14,7 +14,7 @@ The project was built using React, Vite.js, and Tailwind CSS. Vercel was used fo
 
 ## Optimizations
 
-- [ ] Fix error handling for no input
+- [x] Fix error handling for no input
 
 ## Acknowledgements
 
