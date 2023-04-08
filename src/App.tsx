@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Link from "./components/Link";
 import Navbar from "./components/Navbar";
 import Stats from "./components/Stats";
+
 interface ShortenResponse {
   ok: boolean;
   result: {
@@ -25,6 +26,7 @@ type Links = ShortenResponse["result"][];
 export default function App() {
   const [links, setLinks] = React.useState<Links>([]);
   const [link, setLink] = React.useState("");
+  const [error, setError] = React.useState("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -32,6 +34,11 @@ export default function App() {
       // Send API request to shorten the link
       const url = "https://api.shrtco.de/v2/shorten?url=" + link;
       const response = await fetch(url);
+
+      if (!response.ok) {
+        throw new Error("Please add a valid link");
+      }
+
       const data = await response.json();
 
       // Update the links array with the new shortened link
@@ -39,15 +46,23 @@ export default function App() {
 
       // Update the response object with the new API response
       setLink("");
+      setError("");
     } catch (error) {
-      console.error(error);
+      setError("Please add a valid link");
     }
   };
+
   return (
     <main className="font-sans">
       <Navbar />
       <Hero />
-      <Link handleSubmit={handleSubmit} link={link} setLink={setLink} />
+      <Link
+        handleSubmit={handleSubmit}
+        link={link}
+        setLink={setLink}
+        error={error}
+      />
+      {/* {error && <p className="text-red-500">{error}</p>} */}
       <Stats links={links} />
       <Boost />
       <Footer />

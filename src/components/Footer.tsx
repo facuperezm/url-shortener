@@ -16,7 +16,7 @@ const Footer = () => {
               <h4 className="mt-10 mb-5 text-lg font-bold">{title}</h4>
               {links.map((link) => (
                 <li
-                  className="text-md py-0.5 text-neutral-gray cursor-pointer"
+                  className="text-md py-0.5 text-neutral-gray cursor-pointer hover:text-primary-cyan"
                   key={link}
                 >
                   {link}

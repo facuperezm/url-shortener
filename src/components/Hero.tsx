@@ -14,7 +14,7 @@ export default function () {
           </p>
           <a
             href="#"
-            className="bg-primary-cyan focus:opacity-50 rounded-3xl px-5 py-2 font-bold text-white mt-4 -mb-4"
+            className="bg-primary-cyan focus:opacity-50 rounded-3xl px-5 py-2 font-bold text-white mt-4 -mb-4 hover:bg-primary-cyan/[0.9]"
           >
             Get Started
           </a>
