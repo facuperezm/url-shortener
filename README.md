@@ -12,6 +12,10 @@ Take a look at the app in action:
 
 The project was built using React, Vite.js, and Tailwind CSS. Vercel was used for deployment.
 
+## Optimizations
+
+[ ] - Fix error handling for no input
+
 ## Acknowledgements
 
 A big thank you to the team at Shrtcode for providing the API used in this project. Additional thanks to the [Tailwind CSS documentation](https://tailwindcss.com/docs/installation) for their helpful resources.
