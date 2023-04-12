@@ -22,7 +22,7 @@ interface StatsProps {
 export default function Stats({ links }: StatsProps) {
   return (
     <>
-      <div className="flex flex-col justify-center pt-24 bg-primary-cyan bg-opacity-10 w-full mx-auto px-2">
+      <div className="flex flex-col justify-center pt-24 bg-primary-cyan bg-opacity-10 w-full mx-auto px-2 ">
         {links.length > 0 && <LinkUrl links={links} />}
         <div className="flex flex-col justify-start pt-8 ">
           <h1 className="text-3xl font-extrabold text-neutral-very-dark-blue text-center ">
@@ -33,7 +33,7 @@ export default function Stats({ links }: StatsProps) {
             statistics dashboard.
           </p>
         </div>
-        <div className="grid grid-flow-row md:grid-cols-3 gap-6 md:container max-w-lg mx-auto pb-40">
+        <div className="grid grid-flow-row md:grid-cols-3 gap-6 md:container max-w-lg mx-auto pb-40 md:max-w-4xl md:mx-auto">
           <div className="bg-white rounded-md p-6">
             <div className="bg-primary-dark-violet rounded-full absolute p-4 -translate-y-16 right-[50%] translate-x-[50%] md:right-auto md:-translate-x-0 ">
               <img src={firstcomp} alt="" />

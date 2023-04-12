@@ -10,7 +10,7 @@ const Footer = () => {
         <div>
           <h3 className="font-bold text-4xl pt-12">Shortly</h3>
         </div>
-        <div className="md:grid md:grid-cols-3 md:gap-40 md:pr-10 pb-12 ">
+        <div className="md:grid md:grid-cols-3 md:gap-40 md:pr-10 pb-12 md:max-w-4xl">
           {footerLink.map(({ id, title, links }) => (
             <ul key={id}>
               <h4 className="mt-10 mb-5 text-lg font-bold">{title}</h4>
