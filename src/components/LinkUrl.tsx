@@ -12,7 +12,7 @@ interface Props {
 
 export default function LinkUrl({ links }: Props) {
   return (
-    <div className="mx-6 md:mx-48">
+    <div className="md:container mx-auto md:max-w-3xl flex w-full">
       {links?.map((link, index) => {
         return <LinkItem link={link} key={index} />;
       })}

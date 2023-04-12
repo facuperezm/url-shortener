@@ -6,7 +6,7 @@ const Footer = () => {
   const [footerLink, setFooterLink] = useState(footer);
   return (
     <>
-      <footer className="text-center md:text-left md:flex md:flex-row md:justify-around px-12 md:py-10 bg-neutral-very-dark-violet text-white">
+      <footer className="text-center md:text-left md:flex md:flex-row md:justify-around md:py-10 bg-neutral-very-dark-violet text-white ">
         <div>
           <h3 className="font-bold text-4xl pt-12">Shortly</h3>
         </div>

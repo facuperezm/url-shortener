@@ -26,7 +26,7 @@ export default function LinkItem({ link }: Props) {
   };
 
   return (
-    <div className="bg-white rounded-md flex flex-col px-4 truncate py-3 mb-2">
+    <div className="bg-white rounded-md flex flex-col px-4 truncate py-3 mb-2 w-full">
       <p className="font-semibold text-md pb-2">{link.original_link}</p>
       <div className="h-[0.5px] bg-neutral-grayish-violet w-[90%] opacity-30"></div>
       <p className="text-primary-cyan text-md py-2 font-semibold">
