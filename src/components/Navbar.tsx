@@ -4,7 +4,7 @@ import { Menu } from "@headlessui/react";
 
 export default function Navbar() {
   return (
-    <header className="flex flex-row w-full px-6 items-center justify-between text-neutral-grayish-violet text-sm font-bold md:max-w-5xl md:mx-auto">
+    <header className="flex flex-row w-full px-6 items-center justify-between text-neutral-grayish-violet text-sm font-bold md:max-w-4xl md:mx-auto">
       <nav className="flex flex-row items-center py-10">
         <div>
           <img src={logo} className="w-[110px] h-[30px] cursor-pointer" />

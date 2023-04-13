@@ -9,7 +9,7 @@ interface Props {
 
 export default function Link({ handleSubmit, link, setLink, error }: Props) {
   return (
-    <div className="flex flex-col md:container mx-auto md:max-w-3xl px-2">
+    <div className="flex flex-col md:container mx-auto md:max-w-4xl px-2">
       <div className="bg-primary-dark-violet bg-[url('./assets/bg-shorten-desktop.svg')] bg-cover py-4 md:py-8 px-5 md:px-10 rounded-md relative overflow-hidden translate-y-[50%]">
         <form
           className="flex flex-col md:flex-row gap-3 py-1"
