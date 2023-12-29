@@ -1,6 +1,6 @@
 # URL Shortening
 
-Welcome to my URL shortening project! This app allows you to shorten long URLs using the [Shrtcode API](https://shrtco.de/). Check out the live site at [url-facundo.vercel.app/](https://url-facundo.vercel.app/).
+Welcome to my URL shortening project! This app allows you to shorten long URLs using the [Shrtcode API](https://shrtco.de/). Check out the live site at [url.facupm.dev/](https://url.facupm.dev).
 
 ## Screenshots
 
